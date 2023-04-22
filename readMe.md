@@ -1,14 +1,38 @@
-# Java
+# Spis treści
+
+1. [Wprowadzenie](#wprowadzenie)
+    - [Klasa i obiekt](#klasa-i-obiekt)
+2. [Podstawowy program](#podstawowy-program)
+    - [Wyświetlanie w konsoli](#wyświetlanie-w-konsoli)
+3. [Zmienna](#zmienna)
+    - [Podstawowe operatory](#podstawowe-operatory)
+    - [Dodatkowe operatory przypisania](#dodatkowe-operatory-przypisania)
+    - [Konkatenacja](#konkatenacja)
+    - [Ciągi znaków](#ciągi-znaków)
+4. [Pobieranie wartości od użytkownika](#pobieranie-wartości-od-użytkownika)
+5. [Instrukcje warunkowe](#instrukcje-warunkowe)
+    - [Operatory relacyjne](#operatory-relacyjne)
+6. [Wartości logiczne](#wartości-logiczne)
+    - [Konstrukcja instrukcji warunkowej](#konstrukcja-instrukcji-warunkowej)
+    - [Warunki złożone](#warunki-złożone)
+7. [Pętle](#pętle)
+    - [Iterator i iteracja](#iterator-i-iteracja)
+    - [While](#while)
+    - [Do while](#do-while)
+    - [For](#for)
+    - [Iterowanie po ciągach znaków](#iterowanie-po-ciągach-znaków)
+
+&nbsp;
+
+# Wprowadzenie
 
 Java to obiektowy język programowania wysokiego poziomu, ogólnego przeznaczenia.
 
----
-
-### Klasa i obiekt
+## Klasa i obiekt
 
 Na podstawie **klas** tworzone są **obiekty**. Można je rozumieć jak pewngeo rodzaju przepisy na ich stworzenie. Definiujemy w nich **stan** oraz **zachowanie** obiektów. Poprzez stan rozumiemy wszelkie dane przechowywane w obrębie obiektu, z kolei zachowaniem są **metody**, czyli funkcje, które mogą operować na tych danych.
 
-## Podstawowy program
+# Podstawowy program
 
 ```java
 public class HelloWorld {
@@ -31,11 +55,11 @@ W ciele głównej metody znajuje się jedna instrukcja. Jest odpowiedzialna za w
 
 > `println` również jest pewną metodą. Należy do jednej z klas biblioteki standardowej.
 
-Biblioteka standardowa to zbiór tysięcy klas, które dostępne są dla programistów. Zostały one napisane przez twórców języka Java.
+**Biblioteka standardowa** to zbiór tysięcy klas, które dostępne są dla programistów. Zostały one napisane przez twórców języka Java.
 
 > Na końcu każdej instrukcji znajduje się średnik.
 
-### Wyświetlanie w konsoli
+## Wyświetlanie w konsoli
 
 Najprostszym sposobem porozumiewania się z użytkownikiem jest korzystanie z konsoli. W celu wyświetlenia tam danych informacji posłużą nam dwie podstawowe funkcje:
 
@@ -48,33 +72,33 @@ Metoda `println` poza wyświetleniem podanego napisu przejdzie do następnej lin
 
 > Napisy, ciągi znaków, czy też łańcuchy znaków zapisujemy w języku Java w cudzysłowie.
 
-## Zmienna
+# Zmienna
 
-`Zmienna` to pewne wydzielone miejsce w pamięci komputera, gdzie mogą być przechowywane dane, na przykład wyniki wykonywanych operacji. Wartością zmiennej może być na przykład liczba lub ciąg znaków. Zmienna musi posiadać `nazwę symboliczną`, przez którą można odwoływać się do niej w programie. Nazwa może być dowolna, ale musi spełniać następujące warunki:
+**Zmienna** to pewne wydzielone miejsce w pamięci komputera, gdzie mogą być przechowywane dane, na przykład wyniki wykonywanych operacji. Wartością zmiennej może być na przykład liczba lub ciąg znaków. Zmienna musi posiadać **nazwę symboliczną**, przez którą można odwoływać się do niej w programie. Nazwa może być dowolna, ale musi spełniać następujące warunki:
 
 - Nazwa zmiennej nie może być słowem kluczowym języka Java,
 - Nazwa nie może zaczynać się od cyfry,
 - Nazwa nie może zawierać znaków białych i większości znaków specjalnych.
 
-> `Słowa kluczowe` to zastrzeżone słowa, które mają specjalne znaczenie w językach programowania.
+> **Słowa kluczowe** to zastrzeżone słowa, które mają specjalne znaczenie w językach programowania.
 
 Ponadto należy pamiętać, że wielkie i małe litery są rozróżnialne. Poza powyższymi wymogami zaleca się nadawanie nazw jawnie określających przeznaczenie danej zmiennej i odradza stosowanie polskich znaków (staramy się korzystać tylko z alfabetu łacińskigo).
 
 W przypadku nazw wieloczłonowych możemy posłużyć się jedną z popularnych notacji:
 
-- `camelCase` - wszystkie wyrazy piszemy łącznie, każdy kolejny zaczynając od wielkiej litery,
-- `PascalCase` - wszystkie wyrazy piszemy łącznie, każdy (łącznie z pierwszym) zaczynając od wielkiej litery,
-- `snake_case` - wyrazy oddzielamy znakiem myślnika,
-- `kebab-case` - wyrazy oddzielamy znakiem myślnika.
+- **camelCase** - wszystkie wyrazy piszemy łącznie, każdy kolejny zaczynając od wielkiej litery,
+- **PascalCase** - wszystkie wyrazy piszemy łącznie, każdy (łącznie z pierwszym) zaczynając od wielkiej litery,
+- **snake_case** - wyrazy oddzielamy znakiem myślnika,
+- **kebab-case** - wyrazy oddzielamy znakiem myślnika.
 
-Javę cechuje typowanie silne, w związku z tym trzeba jawnie określić typ zmiennej, poprzez dodanie słowa kluczowego. Kilka podstawowych, prymitywnych typów wbudowanych, oferowancyh przez Javę to:
+Javę cechuje **typowanie silne**, w związku z tym trzeba jawnie określić typ zmiennej, poprzez dodanie słowa kluczowego. Kilka podstawowych, **prymitywnych typów wbudowanych**, oferowancyh przez Javę to:
 
 - `int` - liczba całkowita,
 - `double` - liczba rzeczywista,
 - `char` - znak,
 - `boolean` - wartość logiczna.
 
-> Pojedyncze znaki zapisujemy w apostrofach, na przykład 'a', a liczby rzeczywiste z kropką pomiędzy częścią całkowitą, z dziesiętną, na przykład 9.8.
+> Pojedyncze znaki zapisujemy w apostrofach, na przykład `'a'`, a liczby rzeczywiste z kropką pomiędzy częścią całkowitą, z dziesiętną, na przykład *9.8*.
 
 Deklaracja zmiennej:
 ```java
@@ -102,7 +126,7 @@ final double PI = 3.14;
 
 > W przypadku stałych rozpoczynamy inicjalizację od słowa `final`. Stała, jak sama nazwa wskazuje, nie pozwala na przypisanie nowej wartości, zatem musimy ją nadać podczas deklaracji. Przyjęło się, że nazwy symboliczne stałych zapisujemy wielkimi literami.
 
-## Podstawowe operatory
+# Podstawowe operatory
 
 Podobnie jak inne języki, Java oferuje kilka podstawowych operatorów arytmetycznych, znanych z matematyki:
 - `+` - dodawanie,
@@ -129,7 +153,7 @@ Powyższy przykład przedstawia dodawanie dwóch liczb. Na początku deklarujemy
 
 > Często poza wartościami liczbowymi będziemy chcieli wyświetlić napis mówiący, czym jest dana wartość. Można to zrobić na kilka sposobów. Jednym z rozwiązań jest kilka oddzielych wywołań metod `println` lub `print`. Innym jest dodawanie ciągów znaków.
 
-### Dodatkowe operatory przypisania
+## Dodatkowe operatory przypisania
 
 Często będziemy musieli zmieniać wartość danej zmiennej, nadpisując ją inną wartością.
 
@@ -139,7 +163,7 @@ int number = 5;
 number = number + 2;
 ```
 
-Przykładowo, liczbę możemy nadpisać wartością o 2 większą, przypisując jej nową wartość w postaci sumy jej starej wartości i liczby 2. Taki zapis można skrócić:
+Przykładowo, liczbę możemy nadpisać wartością o *2* większą, przypisując jej nową wartość w postaci sumy jej starej wartości i liczby *2*. Taki zapis można skrócić:
 - +=,
 - -=,
 - *=,
@@ -152,15 +176,15 @@ int number = 5;
 number += 2;
 ```
 
-Powyższy zapis jest równoważny. Wynik działania będzie identyczny poprzednim. W obu wypadkach zwiększamy liczbę o 2.
+Powyższy zapis jest równoważny. Wynik działania będzie identyczny poprzednim. W obu wypadkach zwiększamy liczbę o *2*.
 
-### Konkatenacja
+## Konkatenacja
 
-**Konkatenacja**  oznacza w informatyce dodawanie ciągów znaków, czy inaczej sklejanie napisów. Operatorem odowiedzialnym za tę operację jest znak `+`, a jej argumentami są na przykład napisy.
+**Konkatenacja** oznacza w informatyce dodawanie ciągów znaków, czy inaczej sklejanie napisów. Operatorem odowiedzialnym za tę operację jest znak `+`, a jej argumentami są na przykład napisy.
 
 > W przypadku poprzedniego przykładu konkatenacji został poddany napis oraz liczba całkowita. Nastąpiła tak zwana konwersja niejawna. Przed doklejeniem wyniku dodawania do napisu, liczba została zmieniona na napis.
 
-## String
+## Ciągi znaków
 
 `String` to wbudowany złożony typ danych. Służy do przechowywania ciągów znaków.
 
@@ -168,7 +192,7 @@ Powyższy zapis jest równoważny. Wynik działania będzie identyczny poprzedni
 
 Typ `String` odnosi się do napisów. Te z kolei, składają się na przykład z poszczególnych liter i cyfr - znaków.
 
-## Pobieranie wartości od użytkownika
+# Pobieranie wartości od użytkownika
 
 ```java
 import java.util.Scanner;
@@ -216,7 +240,7 @@ public class HelloWorld {
 }
 ```
 
-## Instrukcje warunkowe
+# Instrukcje warunkowe
 
 Instrukcje warunkowe służą warunkowemu wykonywaniu instrukcji, w zależności czy pewne przyjęte założenia zostały spełnione.
 
@@ -236,7 +260,7 @@ public class Main {
 }
 ```
 
-> Powyższa instrukcja warunkowa sprawdza, czy wartość zmiennej `age` (przehowującej wiek) jest większa lub równa 18. Jeżeli tak, to wyświetlany jest stosowny napis.
+> Powyższa instrukcja warunkowa sprawdza, czy wartość zmiennej `age` (przehowującej wiek) jest większa lub równa *18*. Jeżeli tak, to wyświetlany jest stosowny napis.
 
 Instrukcje, które mają zostać wykonane, gdy spełniony jest warunek zapisujemy pomiędzy nawiasami klamrowymi. W przypadku pojedynczej instrukcji klamry możemy pominąć
 
@@ -247,26 +271,26 @@ if (age >= 18)
     System.out.println("Osoba jest pełnoletnia.");
 ```
 
-### Operatory relacyjne
+## Operatory relacyjne
 
 Do dyspozycji mamy kilka operatorów służących porównywaniu danych wartości:
 
 |operator|nazwa|
 |-|-|
-|==|równe|
-|!=|różne|
-|>|większe niż|
-|>=|większe lub równe|
-|<|mniejsze niż|
-|<=|mniejsze lub równe|
+|`==`|równe|
+|`!=`|równe|
+|`>`|większe niż|
+|`>=`|większe lub równe|
+|`<`|mniejsze niż|
+|`<=`|mniejsze lub równe|
 
 > Pojedynczy znak równości zarezerwowany jest dla operacji przypisania, więc do porównywania wartości służą dwa znaki.
 
-### Boolean
+# Wartości logiczne
 
 Zmienne typu `boolean` mogą przechowywać jedynie dwie wartości - `true` (prawda) lub `false` (fałsz). Są to tak zwane wartości logiczne. Operatory logiczne, czyli wszelkie porównania, zwracają wynik w postaci takiej wartości.
 
-### Konstrukcja instrukcji warunkowej
+## Konstrukcja instrukcji warunkowej
 
 ```java
 double number = 2.1;
@@ -283,15 +307,15 @@ Poza instrukcją `if` mamy do dyspozycji `else if` odpowiedzialne za sprecyzowan
 
 > Instrukcje w `else` zostaną wykonane, jeżeli żadna z wcześniejszych instrukcji warunkowych nie została spełniona.
 
-### Warunki złożone
+## Warunki złożone
 
 Dane warunki proste, opierające się na przykład na porównaniach, możemy łączyć w bardziej złożone i precyzyjne konstrukcje.
 
 |operator|nazwa|opis|
 |-|-|-|
-|&&|koniunkcja|and, i, oraz - oba warunki muszą być spełnione|
-|\|\||alternatywa|or, lub - przynajmniej jeden z warunków musi być spełnony|
-|!|negacja|not, zaprzeczenie - odwrócenie wartości logicznej|
+|`&&`|koniunkcja|and, i, oraz - oba warunki muszą być spełnione|
+|`\|\|`|alternatywa|or, lub - przynajmniej jeden z warunków musi być spełnony|
+|`!`|negacja|not, zaprzeczenie - odwrócenie wartości logicznej|
 
 Przykłady:
 
@@ -302,7 +326,7 @@ if (-2 <= x && x < 7)
     System.out.println("Liczba x znajduje się w przedziale.");
 ```
 
-Liczba znajduje się w przedziale prawostronnie domkniętym [-2; 7) (jest większa lub równa od -2 oraz mniejsza niż 7).
+Liczba znajduje się w przedziale prawostronnie domkniętym *[-2; 7)* (jest większa lub równa od *-2* oraz mniejsza niż *7*).
 
 ```java
 int x = 2;
@@ -311,19 +335,19 @@ if ( !(x == 3 || x == -3) )
     System.out.println("Liczba x nie jest równa 3 ani -3");
 ```
 
-Liczba nie jest równa 3 ani -3 (nieprawdą jest, że jest równa 3 lub -3).
+Liczba nie jest równa *3* ani *-3* (nieprawdą jest, że jest równa *3* lub *-3*).
 
-## Pętle
+# Pętle
 
 Pętle służą do wielokrotnego wykonywania danych instrukcji, tak długo, jak określony warunek pozostaje spełniony.
 
-### Iterator i iteracja
+## Iterator i iteracja
 
 Iteracja pętli to jednorazowe wykonanie się wszystkich instrukcji w niej zawartych, pojedynczy obrót pętli.
 
 Iterator to pomocnicza zmienna sterująca wykonywaną pętlą. Na przykład zliczająca kolejne iteracje.
 
-### While
+## While
 
 ```java
 int i = 0;
@@ -339,7 +363,7 @@ W przypadku pętli `while` po słowie kluczowym, w nawiasach okrągłych, wpisuj
 
 > Instrukcja `i++` odpowiedzialna jest za zwiększenie wartości zmiennej `i` o 1. Jest to tak zwana inkrementacja. Zmniejszenie wartości o 1 nazywamy dekrementacją i oznaczamy jako `i--`.
 
-### Do while
+## Do while
 
 ```java
 int i = 0;
@@ -353,7 +377,7 @@ do {
 
 Pętlę `do while` charakteryzuje umiejscowanie warunku na końcu pętli. Oznacza to, że najpierw wykonane zostaną instrukcje zawarte w pętli, a dopiero później zostanie sprawdzony warunek.
 
-### For
+## For
 
 ```java
 for (int i = 0; i < 10; i++) {
@@ -364,7 +388,7 @@ for (int i = 0; i < 10; i++) {
 
 W deklaracji pętli for znajduje się deklaracja iteratora, warunek oraz zmiana wartości iteratora po każdym wykonaniu pętli.
 
-### String
+## Iterowanie po ciągach znaków
 
 W przypadku typów złożonych często będziemy chcieli mieć możliowść odwołania się do poszczególnych elementów.
 
