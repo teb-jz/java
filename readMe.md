@@ -21,6 +21,10 @@
     - [Do while](#do-while)
     - [For](#for)
     - [Iterowanie po ciągach znaków](#iterowanie-po-ciągach-znaków)
+8. [Tablice](#tablice)
+    - [Deklaracja tablicy](#deklaracja-tablicy)
+    - [Iterowanie po tablicach](#iterowanie-po-tablicach)
+    - [Tablice wielowymiarowe](#tablice-wielowymiarowe)
 
 &nbsp;
 
