@@ -415,7 +415,6 @@ Przydatna może być również metoda `length`, zwracająca długość danego na
 Przykład zastosowania tych dwóch metod:
 
 ```java
-
 String text = "Ala ma kota";
 int length = text.length();
 
@@ -425,4 +424,99 @@ for (int i = 0; i < length; i++) {
 
     System.out.println(character);
 }
+```
+
+# Tablice
+
+**Tablice** to struktury pozwalające na przechowywanie większej ilości danych w uporządkowanej formie.
+
+## Deklaracja tablicy
+
+```java
+int [] numbers = {3, 2, 1};
+```
+
+Deklarację tablicy zaczynamy od podania typ danych, jaki będzie przechowywała, nawiasów kwadratowych oraz nazwy symbolicznej. Inicjalizujemy ją poprzez podanie wartości w nawiasach klamrowych.
+
+```java
+int [] numbers = new int[3];
+```
+
+W przypadku, gdy nie chcemy od razu podawać wartości, stosujemy inny zapis, gdzie jawnie podajemy rozmiar tablicy.
+
+> Rozmiaru tablicy nie można zmienić po jej utworzeniu.
+
+Elementy tablicy są uporządkowane, to znaczy, że mają ustaloną kolejność określone przez `indeks`, czyli liczbę, po której możemy odwołać się do danego elementu.
+
+> Elementy indeksowane są od *0*.
+
+```java
+int [] numbers = {8, -2, 3};
+
+System.out.println("Pierwszy element: " + numbers[0]);
+
+System.out.println("Drugi element: " + numbers[0]);
+```
+
+Oczywiście moza odczytywaniem wartości z tablicy, mamy również możliwość ich zmiany.
+
+```java
+int [] numbers = new int [2];
+
+System.out.println("Stara wartość: " + numbers[0]);
+
+numbers[0] = -4;
+
+System.out.println("Nowa wartość: " + numbers[0]);
+```
+
+## Iterowanie po tablicach
+
+Tworzone tablice często zawierać będą dużo danych, na których najłatwiej będzie operować przy pomocy wcześniej poznanych pętli.
+
+```java
+int [] numbers = {8, 4, 5, 2};
+
+for (int i = 0; i < numbers.length; i++)
+    System.out.println(numbers[i]);
+```
+
+W celu pobrania długości tablicy korzystamy z pola `length`. Wartość wykorzystać można do ograniczenia iteratora. Przy próbie odwołania się do indeksu spoza tablicy otrzymamy błąd.
+
+## Tablice wielowymiarowe
+
+Tablice mogą mieć więcej niż jeden wymiar - tablica może zawierać kolejne tablice. Mowa wtedy o tablicach **wielowymiarowych** lub **zagnieżdżonych**.
+
+```java
+int [][] numbers = new int[2][3];
+
+numbers[0][1] = 3;
+
+System.out.println("Element o indeksach 0,1: " + numbers[0][1]);
+```
+
+### Inicjalizowanie tablic wielowymiarowych
+
+```java
+int [][] numbers = {
+
+    {1, 1},
+    {3, 2}
+};
+
+System.out.println(numbers[1][1]);
+```
+
+### Iterowanie po tablicach zagnieżdżonych
+
+```java
+char [][] letters = {
+
+    {'a', 'b'},
+    {'c', 'd'}
+};
+
+for (int y = 0 ; y < letters.length; y++)
+    for (int x = 0 ; x < letters.length; x++)
+        System.out.println(letters[y][x]);
 ```
