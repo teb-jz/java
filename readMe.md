@@ -459,10 +459,10 @@ int [] numbers = {8, -2, 3};
 
 System.out.println("Pierwszy element: " + numbers[0]);
 
-System.out.println("Drugi element: " + numbers[0]);
+System.out.println("Drugi element: " + numbers[1]);
 ```
 
-Oczywiście moza odczytywaniem wartości z tablicy, mamy również możliwość ich zmiany.
+Oczywiście poza odczytywaniem wartości z tablicy, mamy również możliwość ich zmiany.
 
 ```java
 int [] numbers = new int [2];
