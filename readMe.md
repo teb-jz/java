@@ -282,7 +282,7 @@ Do dyspozycji mamy kilka operatorów służących porównywaniu danych wartości
 |operator|nazwa|
 |-|-|
 |`==`|równe|
-|`!=`|równe|
+|`!=`|różne|
 |`>`|większe niż|
 |`>=`|większe lub równe|
 |`<`|mniejsze niż|
