@@ -25,6 +25,7 @@
     - [Deklaracja tablicy](#deklaracja-tablicy)
     - [Iterowanie po tablicach](#iterowanie-po-tablicach)
     - [Tablice wielowymiarowe](#tablice-wielowymiarowe)
+9. [Metody](#metody)
 
 &nbsp;
 
@@ -523,4 +524,47 @@ char [][] letters = {
 for (int y = 0 ; y < letters.length; y++)
     for (int x = 0 ; x < letters.length; x++)
         System.out.println(letters[y][x]);
+```
+
+# Metody
+
+**Metody** w programowaniu to nazwane, wydzielone fragmenty kodu. Ich celem jest wykonanie określonego zadania.
+
+> **Ciało metody** stanowi kod źródłowy zawarty między dwoma nawiasami klamrowymi.
+
+```java
+public static void print () {
+
+    System.out.println("Text");
+}
+```
+
+**Wywołanie metody**, czyli uruchomienie ciągu instrukcji odbywa się poprzez podanie nazwy metody zakończonej nawiasami okrągłymi.
+
+```java
+print();
+```
+
+Metoda może przyjmować **parametry**, czyli wartości, na któych będzie operowała.
+
+```java
+public static void sum (a, b) {
+
+    System.out.println(a + b);
+}
+```
+
+Podczas wywołania **argumenty** podajemy w nawiasach okrągłych.
+
+```java
+sum(1, 2);
+```
+
+Metody zwracają wartość poprzez użycie słowa kluczowego `return`. Użycie słowa kluczowego natychmiast przerywa metodę i zwraca wartość.
+
+```java
+public static int sum (int a, int b) {
+
+    return a + b;
+}
 ```
